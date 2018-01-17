@@ -1,0 +1,16 @@
+footer {
+  padding: 0 $base-spacing 10em;
+  font-weight: 300;
+  font-size: modular-scale(-1);
+  color: $medium-grey;
+  text-rendering: optimizeLegibility;
+
+  &::before {
+    content: '';
+    display: block;
+    border-top: $base-border;
+    width: $base-spacing;
+    height: 0;
+    margin-bottom: $base-spacing;
+  }
+}

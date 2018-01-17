@@ -1,0 +1,46 @@
+// Typography
+$base-font-family: 'Work Sans', $font-stack-system;
+$heading-font-family: $base-font-family;
+
+$small-font-size: 0.875em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.5;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5rem;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #0fc9e7;
+$pink: #e41f7b;
+$dark-grey: #333;
+$medium-grey: #999;
+$light-grey: #ddd;
+$black: #000;
+
+// Font Colors
+$base-font-color: $dark-grey;
+$action-color: $blue;
+$accent-color: $pink;
+
+// Border
+$base-border-color: $light-grey;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

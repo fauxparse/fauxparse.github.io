@@ -1,0 +1,28 @@
+.qualifications {
+  padding: $base-spacing;
+  margin: 0;
+
+  dt {
+    font-weight: normal;
+    font-size: modular-scale(1);
+    position: relative;
+    margin: 0 0 0 #{-$base-spacing};
+    border-left: 0.25em solid $accent-color;
+    padding: 0 0 0 calc(#{$base-spacing} - 0.25em);
+  }
+
+  dd {
+    margin-bottom: $small-spacing;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: modular-scale(-1);
+    letter-spacing: 0.1em;
+  }
+
+  @include desktop {
+    dt {
+      margin: 0 0 0 calc(-0.25em - #{$base-spacing});
+      padding: 0 0 0 $base-spacing;
+    }
+  }
+}

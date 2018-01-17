@@ -1,0 +1,16 @@
+.interests {
+  padding: 0 $base-spacing $base-spacing;
+  margin: 0;
+
+  ul {
+    li {
+      margin-bottom: $small-spacing;
+    }
+  }
+
+  em {
+    font-style: normal;
+    font-weight: 500;
+    color: $black;
+  }
+}

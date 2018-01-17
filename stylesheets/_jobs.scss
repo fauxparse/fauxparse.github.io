@@ -1,0 +1,78 @@
+.job {
+  padding: 0 $base-spacing $base-spacing;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .dates {
+    color: $medium-grey;
+    font-size: modular-scale(-1);
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+  }
+
+  h3 {
+    margin: 0 0 0 #{-$base-spacing};
+    border-left: 0.25em solid $accent-color;
+    padding: 0 0 0 calc(#{$base-spacing} - 0.25em);
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: modular-scale(2);
+    color: $black;
+  }
+
+  h4 {
+    font-size: modular-scale(-1);
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: $small-font-size;
+    margin: 0 0 $small-spacing;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $accent-color;
+
+    small {
+      font-size: 100%;
+      color: $medium-grey;
+    }
+  }
+
+  ul {
+    margin-bottom: $small-spacing;
+  }
+
+  .skills {
+    font-size: modular-scale(-1);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.1em;
+  }
+
+  @include desktop {
+    border-left: 1px solid $light-grey;
+    margin-left: -1px;
+
+    h3 {
+      margin: 0 0 0 calc(-0.25em - #{$base-spacing});
+      padding: 0 0 0 $base-spacing;
+    }
+
+    &:first-of-type {
+      font-size: modular-scale(1);
+
+      .h3 {
+        font-size: modular-scale(4);
+      }
+
+      .dates, h4 {
+        font-size: modular-scale(0);
+      }
+
+      ~ section {
+        opacity: 0.875;
+      }
+    }
+  }
+}
