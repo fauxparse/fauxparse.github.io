@@ -1,21 +1,40 @@
 .intro {
   padding: 0 $base-spacing $base-spacing;
   margin: 0;
-  font-size: modular-scale(1);
-  color: $black;
 
   p {
+    font-size: modular-scale(1);
     line-height: 2;
     margin: 0;
   }
 
   em {
     font-style: normal;
-    color: $accent-color;
+    font-weight: $bold-font-weight;
+    color: $black;
+  }
+
+  ul {
+    margin-top: $small-spacing;
+
+    li {
+      display: inline-block;
+      color: $medium-grey;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+
+      &:not(:last-child)::after {
+        content: ' • ';
+        color: $light-grey;
+      }
+    }
   }
 
   @include desktop {
-    font-size: modular-scale(2);
-    padding-top: 9.5em;
+    padding-top: 15em;
+
+    p {
+      font-size: modular-scale(2);
+    }
   }
 }
