@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
+$base-font-size: 10pt;
+
+@import "bourbon";
+@import "bitters/base";
+
+@import "icons";
+
+body {
+  font-size: $base-font-size;
+  color: black;
+}
+
+header {
+  .portrait {
+    float: left;
+    height: 2cm;
+    width: auto;
+  }
+
+  h1 {
+    font-weight: $light-font-weight;
+    font-size: modular-scale(3, $base-font-size);
+    margin: 0 0 0 2cm;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: $light-font-weight;
+    margin: 0 0 0 2cm;
+  }
+
+  .contact {
+    margin: ($base-font-size / 2) 0 $base-font-size 2cm;
+    border-top: 0.5pt solid $light-grey;
+    padding-top: 4pt;
+  }
+
+  .contact li {
+    display: inline-block;
+
+    &:not(:last-child)::after {
+      content: "•";
+      margin-left: 0.5em;
+      margin-right: 0.25em;
+      color: $light-grey;
+    }
+  }
+
+  a {
+    color: $medium-grey;
+    text-decoration: none;
+  }
+
+  .icon {
+    margin-right: 0.5em;
+
+    path {
+      fill: $medium-grey;
+    }
+  }
+}
+
+main {
+  padding-left: 2cm;
+}
+
+.intro {
+  margin: 0 1cm ($base-font-size * 1.5) 0;
+
+  p {
+    font-size: modular-scale(1, $base-font-size);
+  }
+
+  em {
+    font-weight: $bold-font-weight;
+    font-style: normal;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: $light-font-weight;
+
+    &:not(:last-child)::after {
+      content: "•";
+      margin-left: 0.5em;
+      margin-right: 0.25em;
+      color: $light-grey;
+    }
+  }
+}
+
+.employment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: flex-row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1cm -1cm 1cm 0;
+
+  .job {
+    flex: 1 1 40%;
+    margin: 0 1cm ($base-font-size * 1.5) 0;
+
+    .dates {
+      font-size: modular-scale(-1, $base-font-size);
+      display: inline-block;
+      border-top: 3pt solid $light-grey;
+      padding-top: 3pt;
+    }
+
+    h3 {
+      font-size: modular-scale(1, $base-font-size);
+      font-weight: $light-font-weight;
+      margin: 0;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: $light-font-weight;
+      margin: 0 0 $base-font-size;
+      font-size: modular-scale(-1, $base-font-size);
+      color: $accent-color;
+
+      small {
+        font-size: 100%;
+        color: $medium-grey;
+      }
+    }
+
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    .skills {
+      margin-top: $base-font-size;
+      font-size: modular-scale(-2, $base-font-size);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: $light-font-weight;
+      color: $medium-grey;
+    }
+
+    &:first-child .dates {
+      border-top-color: $accent-color;
+    }
+  }
+}
+
+.qualifications {
+  float: left;
+  width: 50%;
+  padding-right: 5mm;
+
+  dt {
+    font-weight: $light-font-weight;
+    font-size: modular-scale(1, $base-font-size);
+    margin: 0;
+  }
+
+  dd {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: $light-font-weight;
+    margin: 0 0 $base-font-size;
+    color: $medium-grey;
+  }
+}
+
+.interests {
+  margin-left: 50%;
+    padding-left: 5mm;
+
+  li {
+    margin: 0 0 $base-font-size;
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: modular-scale(-1, $base-font-size);
+  }
+}
+
+footer {
+  position: absolute;
+  left: 2cm;
+  right: 0;
+  bottom: 0;
+  font-size: modular-scale(-1, $base-font-size);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1cm;
+    height: 0;
+    margin: 0 0 $base-font-size;
+    border-top: 3pt solid $light-grey;
+  }
+
+  p {
+    margin: ($base-font-size / 2) 0 0 0;
+  }
+}

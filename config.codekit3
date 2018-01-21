@@ -9,13 +9,6 @@
 	],
 "creatorBuild": "26148",
 "files": {
-	"\/.index.html.swp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.index.html.swp",
-		"oF": 0
-		},
 	"\/build\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -49,13 +42,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/stylesheets\/.cv.scss.swp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stylesheets\/.cv.scss.swp",
-		"oF": 0
 		},
 	"\/stylesheets\/_footer.scss": {
 		"aP": 1,
@@ -290,6 +276,19 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/stylesheets\/print.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/print.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -301,7 +300,7 @@
 	"displayValue": "cv",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-chloe",
-	"lastBuiltDate": 537825816
+	"lastBuiltDate": 538191099
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
