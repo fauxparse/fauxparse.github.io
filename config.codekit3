@@ -7,7 +7,7 @@
 		"uuidString": "6523B61D-5F1C-44E1-865F-248775C46BDA"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/build\/.gitignore": {
 		"cB": 0,
@@ -23,6 +23,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/cv-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/print.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/print-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -297,10 +307,11 @@
 	},
 "projectAttributes": {
 	"creationDate": 537823948,
-	"displayValue": "cv",
+	"displayValue": "fauxparse.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-chloe",
-	"lastBuiltDate": 538191099
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 550714810
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -308,6 +319,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -871,6 +883,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -2098,6 +2114,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
