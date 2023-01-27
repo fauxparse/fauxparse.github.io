@@ -1,4 +1,4 @@
-import portrait from './assets/matt.svg';
+import portrait from './assets/matt.png';
 
 const Header = () => (
   <header>

@@ -28,11 +28,6 @@ header {
   padding: 2rem 0;
 
   img {
-    /* background: radial-gradient(
-      circle closest-side at 50% 40%,
-      rgba(var(--oc-pink-5-rgb), 0.1) 100%,
-      var(--background) 100%
-    ); */
     display: block;
     max-width: 100%;
     height: auto;
@@ -96,7 +91,7 @@ header {
 
 main {
   border-left: 1px dashed var(--border);
-  padding-top: 23rem;
+  padding-top: 25rem;
 
   p {
     margin: 0 0 0.75em;
