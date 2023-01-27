@@ -96,6 +96,7 @@ header {
 
 main {
   border-left: 1px dashed var(--border);
+  padding-top: 23rem;
 
   p {
     margin: 0 0 0.75em;
@@ -306,8 +307,16 @@ footer {
         padding: 0;
 
         p {
+          margin: 0 -1rem 1rem;
+          padding: 0.5rem 1rem;
+          background: var(--foreground);
+          color: var(--inverse);
           font-size: 1.25rem;
           line-height: 1.5;
+
+          em {
+            color: var(--highlight);
+          }
         }
 
         ul,
