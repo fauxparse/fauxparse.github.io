@@ -31,7 +31,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
+::selection {
+  background-color: rgba(var(--oc-blue-5-rgb), 0.25);
+}
+
+@media screen and (prefers-color-scheme: dark) {
   :root {
     --background: var(--oc-gray-8);
     --panel: var(--oc-gray-9);
