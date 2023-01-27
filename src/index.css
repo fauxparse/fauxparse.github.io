@@ -10,6 +10,7 @@
 
   --background: var(--oc-gray-0);
   --panel: var(--oc-gray-1);
+  --panel-dark: var(--oc-gray-9);
   --foreground: var(--oc-gray-8);
   --strong: var(--oc-gray-9);
   --border: var(--oc-gray-3);
@@ -37,7 +38,6 @@
     --strong: var(--oc-gray-0);
     --border: var(--oc-gray-7);
     --subtle: var(--oc-gray-6);
-    --inverse: var(--oc-gray-8);
   }
 }
 

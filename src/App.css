@@ -31,7 +31,7 @@ header {
     background: radial-gradient(
       circle closest-side at 50% 40%,
       rgba(var(--oc-pink-5-rgb), 0.1) 100%,
-      transparent 100%
+      var(--background) 100%
     );
     display: block;
     max-width: 100%;
@@ -114,6 +114,7 @@ main {
 
   em {
     font-weight: 600;
+    font-style: normal;
     color: var(--strong);
   }
 
@@ -254,6 +255,7 @@ main {
 
   em {
     font-weight: 600;
+    font-style: normal;
     color: var(--highlight);
   }
 }
@@ -309,8 +311,7 @@ footer {
         p {
           margin: 0 -1rem 1rem;
           padding: 0.5rem 1rem;
-          background: var(--foreground);
-          color: var(--inverse);
+          background: var(--panel-dark);
           font-size: 1.25rem;
           line-height: 1.5;
 
@@ -404,7 +405,7 @@ footer {
       .interests {
         margin: 0 -1rem;
         padding: 1rem;
-        background: var(--foreground);
+        background: var(--panel-dark);
         color: var(--inverse);
       }
     }
