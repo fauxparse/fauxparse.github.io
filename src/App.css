@@ -28,11 +28,11 @@ header {
   padding: 2rem 0;
 
   img {
-    background: radial-gradient(
+    /* background: radial-gradient(
       circle closest-side at 50% 40%,
       rgba(var(--oc-pink-5-rgb), 0.1) 100%,
       var(--background) 100%
-    );
+    ); */
     display: block;
     max-width: 100%;
     height: auto;
